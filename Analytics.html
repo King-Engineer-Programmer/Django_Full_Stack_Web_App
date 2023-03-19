@@ -1,0 +1,189 @@
+{% load static %}
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="{%static 'lpstyle.css' %}">
+    <link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.3.0/css/font-awesome.css" rel="stylesheet"  type='text/css'>
+    
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+   
+
+
+  
+
+
+    
+<div class="first-nav-bar">
+
+    <div class="title">
+    <h1>  <a href="/">NLP Tweet Analytics</a> <i class="fa fa-twitter" aria-hidden="true"></i></h1>
+    </div>
+</div>
+
+<div class="second-nav-bar">
+
+   
+      
+    <div class="register">
+       
+        <a href="tweet_analyzer">Tweet Analyzer</a>
+      </div>
+
+      <div class="register">
+        <!-- <h1> Login</h1> -->
+        <a href="api_call">API Data</a>
+      </div>
+     
+      <div class="register">
+        <!-- <h1> Login</h1> -->
+        <a href="suggested_followers ">Suggested Followers</a>
+      </div>
+
+      
+
+
+      
+
+</div>
+
+
+</div>
+<div class="graph-analysis">
+
+    <p> <h1>Latest Tweet</h1></p>
+    
+    </div>
+<div class="data-header-two"> 
+    
+    <div class="Tweet_id"> 
+        <h1> Date and Time </h1>
+        
+    </div>
+    <div class="Tweet_date_and_time">
+        <h1>Latest Tweet</h1>
+       
+         </div>
+
+    <div class="Our_Prediction">
+        <h1>Subject</h1>
+       
+        </div>
+        
+    <div class="Our_Prediction">
+        <h1>Sentiment Score</h1>
+     
+        </div>
+        <div class="facebox"></div>
+    
+        
+</div>
+
+
+
+{% for value in data2 %}
+<div class="data-header"> 
+    
+    <div class="Tweet_id"> 
+        <p> {{ forloop.counter }} )            {{value.Date_Time}}</p>
+    </div>
+    <div class="Tweet_date_and_time">
+        <p>{{value.Tweet}}</p>
+         </div>
+
+    <div class="Our_Prediction">
+        <p>{{value.Subject_Field}}</p>
+        </div>
+        
+    <div class="Our_Prediction">
+        <p>{{value.Sentiment_Score}}</p>
+        </div>
+       
+
+
+        
+
+
+
+
+
+        {% if value.Sentiment_Score == 0 %}
+        <div class="facebox">
+      
+       <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-emoji-angry" viewBox="0 0 16 16">
+        <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+        <path d="M4.285 12.433a.5.5 0 0 0 .683-.183A3.498 3.498 0 0 1 8 10.5c1.295 0 2.426.703 3.032 1.75a.5.5 0 0 0 .866-.5A4.498 4.498 0 0 0 8 9.5a4.5 4.5 0 0 0-3.898 2.25.5.5 0 0 0 .183.683zm6.991-8.38a.5.5 0 1 1 .448.894l-1.009.504c.176.27.285.64.285 1.049 0 .828-.448 1.5-1 1.5s-1-.672-1-1.5c0-.247.04-.48.11-.686a.502.502 0 0 1 .166-.761l2-1zm-6.552 0a.5.5 0 0 0-.448.894l1.009.504A1.94 1.94 0 0 0 5 6.5C5 7.328 5.448 8 6 8s1-.672 1-1.5c0-.247-.04-.48-.11-.686a.502.502 0 0 0-.166-.761l-2-1z"/>
+      </svg>
+    </div>
+    
+     
+    
+        {% else %}
+        <div class="facebox">
+        
+        <i class="bi bi-emoji-smile"></i>
+        <svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" fill="currentColor" class="bi bi-emoji-smile" viewBox="0 0 16 16">
+          <path d="M8 15A7 7 0 1 1 8 1a7 7 0 0 1 0 14zm0 1A8 8 0 1 0 8 0a8 8 0 0 0 0 16z"/>
+          <path d="M4.285 9.567a.5.5 0 0 1 .683.183A3.498 3.498 0 0 0 8 11.5a3.498 3.498 0 0 0 3.032-1.75.5.5 0 1 1 .866.5A4.498 4.498 0 0 1 8 12.5a4.498 4.498 0 0 1-3.898-2.25.5.5 0 0 1 .183-.683zM7 6.5C7 7.328 6.552 8 6 8s-1-.672-1-1.5S5.448 5 6 5s1 .672 1 1.5zm4 0c0 .828-.448 1.5-1 1.5s-1-.672-1-1.5S9.448 5 10 5s1 .672 1 1.5z"/>
+        </svg>
+      </div>
+        {% endif %}  
+
+
+       
+
+{% endfor %}
+
+
+
+
+</div>
+
+
+
+
+    
+</div>
+
+
+
+
+
+
+<div class="graph-analysis">
+
+    <p> <h1>Parts of speech breakdown</h1></p>
+
+    </div>
+
+    {% for value in data2 %}
+    <div class="data-header-two"> 
+    
+    <div class="Tweet_id"> 
+        <h1> Nouns </h1>
+        <p>   {{value.Noun}}</p>
+    </div>
+    <div class="Tweet_id">
+        <h1>Pronouns</h1>
+        <p>{{value.Pronoun}}</p>
+         </div>
+
+    <div class="Our_Prediction">
+        <h1>Auxilary_Verbs</h1>
+        <p>{{value.Auxilary_Verbs}}</p>
+        </div>
+        
+    <div class="Our_Prediction">
+        <h1>Adjectives</h1>
+        <p>{{value.Adjective}}</p>
+        </div>
+    
+    <div class="Our_Prediction">
+        <h1> Verbs</h1>
+            <p>{{value.Verb}}</p>
+        </div>
+        
+    </div> 
+    {% endfor %}

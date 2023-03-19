@@ -1,0 +1,472 @@
+/* ----------------------------------------------------------------------------------------------------------------------------------------------------- Nav Bar------------------------------------------------------------- */
+a{
+    text-decoration:none;  
+  }
+
+
+.first-nav-bar{
+    height: 60px;
+    width: 2555px;
+    border: 2px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    display: flex;
+    justify-content: center;
+    background-color: rgb(54, 149, 228) ;
+    text-align: center;
+}
+
+.first-nav-bar h1{
+    font-size: 24px;
+}
+
+
+
+.title{
+    padding: 12px;
+}
+
+.second-nav-bar{
+    height: 60px;
+    width: 2555px;
+    border: 2px;
+    border-width: 2px;
+    border-color: gray;
+    border-style: solid;
+    display: flex;
+    justify-content: end;
+}
+
+.second-nav-bar h1{
+    font-size: 24px;
+}
+
+.second-nav-bar h2{
+    font-size: 24px;
+}
+
+.second-nav-bar a{
+font-size: 24px;
+text-decoration:none;
+color: black; 
+}
+.register{
+    padding: 12px;
+}
+
+.login{
+    padding: 12px;
+}
+
+
+/* ------------------------------------------------------------------------------------------------------------------------------Enter in your tweet ---------------------------------------------------------------------------------------------------*/
+.entertweetheader h1{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 75px;
+}
+
+
+.entertweetheader{
+
+    width: 2500px;
+    height: 300px;  
+}
+
+
+
+
+
+
+
+
+.followersuggestion h1{
+    color:black;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 375px;
+
+}
+
+.boxone{
+width: 2500px;
+height: 300px;
+
+color:black;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 375px;
+
+}
+
+
+
+
+/* --------------------------------------------------------------------------------------------------------------Your 5 most recent tweets-------------------------------------------------------------------- */
+
+.title-main h1{
+    text-align: center;
+    padding: 5px;
+    font-size: 30px;
+
+}
+.main{
+    display: flex;
+    
+    justify-content: center;
+    width: 2000px;
+    height: 300px;
+    padding-left: 150px;
+
+}
+
+.main h1{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+  
+
+}
+
+.main p{
+    font-size: 28px;
+}
+
+       
+.first{
+    height:250px;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 1px;
+    border: 3px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 10px;
+    
+}
+
+.second{
+    height:250px;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 1px;
+    border: 3px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 10px;
+}
+
+.third{
+    height:250px;
+    width: 250px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 1px;
+    border: 3px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 10px;
+}
+
+.Our_Prediction-Two .svg{
+
+    font-size: 14px;
+}
+/* ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- */
+.second-main{
+    display: flex;
+    
+    justify-content: center;
+    width: 2500px;
+    height: 300px;
+    padding-left: 150px;
+
+}
+
+.second-main h1{
+    color: black;
+    font-size: 24px;
+    text-align: center;
+  
+
+}
+
+.second-main p{
+    font-size: 28px;
+}
+
+
+  /* Registration */
+
+  .Registration{
+    padding: 250px;
+   
+    width: 2500px;
+    height: 150px;
+    text-align: center;
+  }
+
+  .Registration h1{
+    font-size: 34px;
+  }
+
+  .text-input{
+    text-align: center;
+  }
+
+/* Login */
+
+  
+  .Login{
+    padding: 250px;
+   
+    width: 2500px;
+    height: 150px;
+    text-align: center;
+  }
+
+  .Login h1{
+    font-size: 34px;
+  }
+
+  .text-input{
+    text-align: center;
+  }
+
+  /* Login or register message  */
+
+ .logout-message{
+   
+    text-align: center;
+ }
+
+ .logout-message h1{
+    font-size: 22px;
+    
+   
+ }
+
+   /* Data Analytics Page */
+
+   .Data_Analytics h2{
+    text-align: center;
+    padding-bottom: 50px;
+    
+   }
+
+   .Data_Analytics{
+    padding: 50px;
+   }
+
+
+.data-header{
+background-color:lightgrey;
+display: flex; 
+justify-content: center;
+
+}
+
+.Tweet_id{
+background-color: white;
+
+height:50px;
+width: 350px;
+margin: 20px;
+text-align: center;
+border-radius: 1px;
+border: 3px;
+border-style: solid;
+border-color: lightgray;
+border-radius: 10px;
+
+}
+
+.Tweet_date_and_time{
+background-color: white;
+
+height:50px;
+width: 550px;
+margin: 20px;
+text-align: center;
+border-radius: 1px;
+border: 3px;
+border-style: solid;
+border-color: lightgray;
+border-radius: 10px;
+}
+
+.Our_Prediction{
+background-color: white;
+
+height:50px;
+width: 350px;
+margin: 20px;
+text-align: center;
+border-radius: 1px;
+border: 3px;
+border-style: solid;
+border-color: lightgray;
+border-radius: 10px;
+}
+
+.Our_Prediction-Two{
+    background-color:red;
+    height:250px;
+    width: 250px;
+    border-radius: 1px;
+    border: 3px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 10px;
+    }
+    
+    .Our_Prediction-Two .i{
+
+        font-size: 14px;
+        color: yellow;
+    }
+
+
+.Nltk_Model_Prediction{
+
+background-color: white;
+    height:50px;
+    width: 350px;
+    margin: 20px;
+    text-align: center;
+    border-radius: 1px;
+    border: 3px;
+    border-style: solid;
+    border-color: lightgray;
+    border-radius: 10px;  
+
+}
+
+
+.data-header h1{
+font-size: 22px;
+margin-bottom: 20px;
+padding-bottom: 10px;
+    
+    }
+
+ 
+    .first-nav-bar a{
+
+    text-decoration: none;
+    font-size: 24px;
+    color: black;
+    }
+
+
+.graph-analysis{
+    width: 2500px;
+    height: 75px;
+    text-align: center;
+    margin: 50px;
+
+}
+.graph-analysis h1{
+    font-size: 32px;
+    text-decoration: underline;
+
+}
+
+
+.data-header-two{
+    background-color:lightgrey;
+    display: flex; 
+    justify-content: center;
+    height: 105px;
+    
+
+
+
+    
+    }
+
+    .data-header-two h1{
+    font-size: 22px;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    text-decoration: underline;
+   
+    }
+
+    .Tweet-POS-Header{
+        text-align: center;
+     width: 2500px;
+     justify-content: center;
+    }
+  
+    .Tweet-POS-Header h1{
+        font-size: 32px;
+        margin-bottom: 20px;
+        padding-bottom: 10px;
+        text-decoration: underline;
+   
+
+    }
+
+    .container {
+
+       background-color: lightgray;
+       /* display: flex;
+       align-items: center; */
+     }
+
+     
+    .container img {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 40%;
+        height: 450px;
+        width: 650px;
+     }
+
+
+     .robot {
+        width: 500px;
+        height: 500px;
+        text-decoration: none;
+      
+     }
+
+     .robot svg{
+        width: 500px;
+        height: 500px;
+     }
+
+     .botclass{
+
+    
+        width: 2500px;
+        height: 750px;
+        justify-content: center;
+        display: flex;
+        text-align: center;
+
+     }
+
+
+     .facebox{
+        height:75px;
+        width: 75px;
+       
+        text-align: center;
+     
+      
+    
+      
+    }
+
+    .facebox svg{
+        height:75px;
+        width: 75px;
+    }
+    
